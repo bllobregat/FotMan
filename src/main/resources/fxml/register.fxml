@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.RegistrationController">
+    <children>
+        <TextField fx:id="txtName" layoutX="60.0" layoutY="104.0"/>
+        <Label layoutX="60.0" layoutY="87.0" text="Name"/>
+        <TextField fx:id="txtSurname" layoutX="60.0" layoutY="162.0"/>
+        <Label layoutX="60.0" layoutY="145.0" text="Surname"/>
+        <TextField fx:id="txtAge" layoutX="60.0" layoutY="223.0"/>
+        <Label layoutX="60.0" layoutY="206.0" text="Age"/>
+        <TextField fx:id="txtAddress" layoutX="60.0" layoutY="288.0"/>
+        <Label layoutX="60.0" layoutY="271.0" text="Address"/>
+        <TextField fx:id="txtPhoneNumber" layoutX="349.0" layoutY="104.0"/>
+        <Label layoutX="349.0" layoutY="87.0" text="Phone Number"/>
+        <TextField fx:id="txtEmail" layoutX="349.0" layoutY="162.0"/>
+        <Label layoutX="349.0" layoutY="145.0" text="Email"/>
+        <PasswordField fx:id="txtPassword" layoutX="349.0" layoutY="223.0"/>
+        <Label layoutX="349.0" layoutY="206.0" text="Password"/>
+        <Button fx:id="btnButton" onAction="#register" layoutX="347.0" layoutY="288.0" mnemonicParsing="false"
+                prefHeight="25.0" prefWidth="149.0" text="Register"/>
+        <Label layoutX="62.0" layoutY="32.0" prefHeight="31.0" prefWidth="438.0" text="Registration Form">
+            <font>
+                <Font name="System Bold" size="27.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

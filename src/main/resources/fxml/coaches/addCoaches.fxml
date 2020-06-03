@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="428.0" prefWidth="280.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.coaches.AddCoachesController">
+    <children>
+        <TextField fx:id="txtName" layoutX="60.0" layoutY="104.0"/>
+        <Label layoutX="60.0" layoutY="87.0" text="Name"/>
+        <TextField fx:id="txtSurname" layoutX="60.0" layoutY="162.0"/>
+        <Label layoutX="60.0" layoutY="145.0" text="Surname"/>
+        <TextField fx:id="txtAge" layoutX="60.0" layoutY="223.0"/>
+        <Button fx:id="btnButton" layoutX="60.0" layoutY="343.0" mnemonicParsing="false" onAction="#addCoaches"
+                prefHeight="32.0" prefWidth="149.0" text="Confirm"/>
+        <Label layoutX="57.0" layoutY="33.0" prefHeight="39.0" prefWidth="156.0" text="Add Coach">
+            <font>
+                <Font name="System Bold" size="27.0"/>
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="206.0" text="Age"/>
+        <TextField fx:id="txtLicence" layoutX="61.0" layoutY="287.0"/>
+        <Label layoutX="61.0" layoutY="270.0" text="Licence"/>
+    </children>
+</AnchorPane>

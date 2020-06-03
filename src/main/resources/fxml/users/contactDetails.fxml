@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="398.0" prefWidth="296.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.users.UserContactDetailsController">
+    <children>
+        <TextField fx:id="txtAddress" layoutX="55.0" layoutY="120.0" prefHeight="25.0" prefWidth="190.0"/>
+        <Label layoutX="55.0" layoutY="103.0" text="Address"/>
+        <Label layoutX="55.0" layoutY="42.0" prefHeight="46.0" prefWidth="225.0" text="Contact Details">
+            <font>
+                <Font name="Elephant" size="24.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="txtPhoneNumber" layoutX="55.0" layoutY="194.0" prefHeight="25.0" prefWidth="190.0"/>
+        <Label layoutX="55.0" layoutY="177.0" text="Phone Number"/>
+        <TextField fx:id="txtEmail" layoutX="55.0" layoutY="262.0" prefHeight="25.0" prefWidth="190.0"/>
+        <Label layoutX="55.0" layoutY="245.0" text="Email"/>
+        <Button onAction="#confirm" layoutX="55.0" layoutY="325.0" mnemonicParsing="false" prefHeight="25.0"
+                prefWidth="190.0" text="Confirm"/>
+    </children>
+</AnchorPane>

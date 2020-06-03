@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="666.0" prefWidth="922.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.MenuController">
+    <children>
+        <Button fx:id="btnPlayers" layoutX="149.0" layoutY="223.0" mnemonicParsing="false" onAction="#goPlayers"
+                prefHeight="169.0" prefWidth="165.0" text="Players"/>
+        <Button fx:id="btnCoaches" layoutX="379.0" layoutY="223.0" mnemonicParsing="false" onAction="#goCoaches"
+                prefHeight="169.0" prefWidth="165.0" text="Coaches"/>
+        <Button fx:id="btnTeam" layoutX="604.0" layoutY="223.0" mnemonicParsing="false" onAction="#goTeams"
+                prefHeight="169.0" prefWidth="165.0" text="Teams"/>
+        <Label alignment="CENTER" layoutX="149.0" layoutY="80.0" prefHeight="67.0" prefWidth="618.0"
+               text="FotMan Application" textAlignment="CENTER">
+            <font>
+                <Font name="Elephant" size="46.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btnSignout" layoutX="379.0" layoutY="529.0" mnemonicParsing="false" onAction="#signOut"
+                prefHeight="25.0" prefWidth="165.0" text="SIGN OUT"/>
+    </children>
+</AnchorPane>

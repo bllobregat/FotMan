@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="575.0" prefWidth="779.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.teams.CoachSquadController">
+    <children>
+        <TableView fx:id="tblTeamCoaches" layoutX="65.0" layoutY="105.0" prefHeight="346.0" prefWidth="625.0">
+            <columns>
+                <TableColumn fx:id="colName" prefWidth="157.0" text="Name"/>
+                <TableColumn fx:id="colSurname" prefWidth="188.0" text="Surname"/>
+                <TableColumn fx:id="colContractStarts" minWidth="0.0" prefWidth="148.0" text="Contract Starts"/>
+                <TableColumn fx:id="colContractEnds" prefWidth="131.0" text="Contract Ends"/>
+            </columns>
+        </TableView>
+        <Button layoutX="132.0" layoutY="491.0" mnemonicParsing="false" onAction="#removeCoaches" prefHeight="30.0"
+                prefWidth="169.0" text="Remove Coach"/>
+        <Button layoutX="447.0" layoutY="491.0" mnemonicParsing="false" onAction="#back" prefHeight="30.0"
+                prefWidth="169.0" text="Back"/>
+        <Label layoutX="65.0" layoutY="46.0" text="Coach Staff">
+            <font>
+                <Font name="Elephant" size="26.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbName" layoutX="273.0" layoutY="46.0" text="Name">
+            <font>
+                <Font name="Elephant" size="26.0"/>
+            </font>
+        </Label>
+
+    </children>
+</AnchorPane>

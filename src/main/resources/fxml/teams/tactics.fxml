@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="606.0" prefWidth="755.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.teams.TacticsControllerFX">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="42.0" prefHeight="46.0"
+               prefWidth="274.0" text="Tactics">
+            <font>
+                <Font name="Elephant" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbName" contentDisplay="CENTER" layoutX="324.0" layoutY="42.0" prefHeight="46.0" prefWidth="274.0"
+               text="Name">
+            <font>
+                <Font name="Elephant" size="24.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="104.0" layoutY="123.0" prefHeight="25.0" prefWidth="177.0" text="Formation"/>
+        <VBox layoutX="98.0" layoutY="182.0" prefHeight="177.0" prefWidth="164.0">
+            <children>
+                <RadioButton fx:id="rB442" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="4 - 4 - 2"/>
+                <RadioButton fx:id="rB433" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="4 - 3 - 3"/>
+                <RadioButton fx:id="rB541" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="5 - 4 - 1"/>
+                <RadioButton fx:id="rB4231" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="4 - 2 - 3 - 1"/>
+                <RadioButton fx:id="rB4141" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0"
+                             prefWidth="155.0" text="4 - 1 - 4 - 1"/>
+                <RadioButton fx:id="rB352" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0"
+                             prefWidth="155.0" text="3 - 5 - 2"/>
+            </children>
+        </VBox>
+        <Label layoutX="98.0" layoutY="390.0" prefHeight="25.0" prefWidth="177.0" text="Type"/>
+        <TextField fx:id="txtType" layoutX="98.0" layoutY="415.0" prefHeight="25.0" prefWidth="177.0"/>
+
+        <Label layoutX="364.0" layoutY="123.0" prefHeight="25.0" prefWidth="177.0" text="Personal Notes"/>
+        <TextArea fx:id="txtPersonalNotes" layoutX="364.0" layoutY="161.0" prefHeight="279.0" prefWidth="274.0"/>
+
+        <Button layoutX="406.0" layoutY="530.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0"
+                prefWidth="190.0" text="Confirm"/>
+    </children>
+</AnchorPane>

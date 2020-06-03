@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="632.0" prefWidth="1065.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.players.TrainingControllerFX">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="42.0" prefHeight="46.0"
+               prefWidth="274.0" text="Training">
+            <font>
+                <Font name="Elephant" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lbName" alignment="CENTER" contentDisplay="CENTER" layoutX="324.0" layoutY="42.0"
+               prefHeight="46.0" prefWidth="274.0" text="Name">
+            <font>
+                <Font name="Elephant" size="24.0"/>
+            </font>
+        </Label>
+
+        <Label layoutX="73.0" layoutY="119.0" prefHeight="25.0" prefWidth="177.0" text="Type"/>
+        <VBox layoutX="73.0" layoutY="159.0" prefHeight="157.0" prefWidth="164.0">
+            <children>
+                <RadioButton fx:id="rBSpeed" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="Speed &amp; Acceleration"/>
+                <RadioButton fx:id="rBAgility" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="Agility"/>
+                <RadioButton fx:id="rBStrength" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="Strength"/>
+                <RadioButton fx:id="rBFlexibility" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0"
+                             text="Flexibility"/>
+                <RadioButton fx:id="rBTactical" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0"
+                             prefWidth="155.0" text="Tactical"/>
+                <RadioButton fx:id="rBGame" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0"
+                             prefWidth="155.0" text="Game Simulations"/>
+            </children>
+        </VBox>
+
+        <Label layoutX="61.0" layoutY="366.0" prefHeight="25.0" prefWidth="177.0" text="Duration"/>
+        <TextField fx:id="txtDuration" layoutX="61.0" layoutY="403.0" prefHeight="25.0" prefWidth="177.0"/>
+
+        <Label layoutX="324.0" layoutY="118.0" prefHeight="25.0" prefWidth="177.0" text="Exercises"/>
+        <TextArea fx:id="txtExercises" layoutX="324.0" layoutY="156.0" prefHeight="279.0" prefWidth="274.0"/>
+        <Label layoutX="685.0" layoutY="118.0" prefHeight="25.0" prefWidth="177.0" text="Personal Notes"/>
+        <TextArea fx:id="txtPersonalNotes" layoutX="685.0" layoutY="156.0" prefHeight="279.0" prefWidth="274.0"/>
+
+        <Button layoutX="406.0" layoutY="530.0" mnemonicParsing="false" onAction="#confirm" prefHeight="25.0"
+                prefWidth="190.0" text="Confirm"/>
+
+    </children>
+</AnchorPane>

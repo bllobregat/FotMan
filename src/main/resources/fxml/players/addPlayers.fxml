@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="375.0" prefWidth="604.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.players.AddPlayersController">
+    <children>
+        <TextField fx:id="txtName" layoutX="60.0" layoutY="104.0"/>
+        <Label layoutX="60.0" layoutY="87.0" text="Name"/>
+        <TextField fx:id="txtSurname" layoutX="60.0" layoutY="162.0"/>
+        <Label layoutX="60.0" layoutY="145.0" text="Surname"/>
+        <TextField fx:id="txtAge" layoutX="60.0" layoutY="223.0"/>
+        <Label layoutX="60.0" layoutY="206.0" text="Age"/>
+        <TextField fx:id="txtNationality" layoutX="358.0" layoutY="223.0"/>
+        <Label layoutX="358.0" layoutY="206.0" text="Nationality"/>
+        <Button fx:id="btnButton" layoutX="199.0" layoutY="294.0" mnemonicParsing="false" onAction="#addPlayers"
+                prefHeight="32.0" prefWidth="173.0" text="Confirm"/>
+        <Label layoutX="57.0" layoutY="33.0" prefHeight="39.0" prefWidth="156.0" text="Add Players">
+            <font>
+                <Font name="System Bold" size="27.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="txtWeight" layoutX="358.0" layoutY="104.0"/>
+        <Label layoutX="358.0" layoutY="87.0" text="Weight"/>
+        <TextField fx:id="txtHeight" layoutX="358.0" layoutY="162.0"/>
+        <Label layoutX="358.0" layoutY="145.0" text="Height"/>
+    </children>
+</AnchorPane>

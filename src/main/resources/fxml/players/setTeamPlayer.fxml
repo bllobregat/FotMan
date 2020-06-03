@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="563.0" prefWidth="859.0"
+            xmlns="http://javafx.com/javafx/11.0.1"
+            fx:controller="com.example.version.controller.javafx.players.SetTeamPlayerController">
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="27.0" prefHeight="46.0" prefWidth="274.0"
+           text="Set Team For">
+        <font>
+            <Font name="Elephant" size="24.0"/>
+        </font>
+    </Label>
+    <Label fx:id="lbName" contentDisplay="CENTER" layoutX="230.0" layoutY="27.0" prefHeight="46.0" prefWidth="274.0"
+           text="Name">
+        <font>
+            <Font name="Elephant" size="24.0"/>
+        </font>
+    </Label>
+    <TableView fx:id="tblTeams" layoutX="60.0" layoutY="110.0" prefHeight="348.0" prefWidth="483.0">
+        <columns>
+            <TableColumn fx:id="colName" prefWidth="242.0" text="Name"/>
+            <TableColumn fx:id="colDivision" minWidth="0.0" prefWidth="243.0" text="Division"/>
+        </columns>
+    </TableView>
+    <Button layoutX="355.0" layoutY="493.0" mnemonicParsing="false" onAction="#Confirm" prefHeight="33.0"
+            prefWidth="149.0" text="Confirm"/>
+    <Label layoutX="621.0" layoutY="110.0" text="Position"/>
+    <TextField fx:id="txtPosition" layoutX="621.0" layoutY="145.0"/>
+    <Label layoutX="621.0" layoutY="205.0" text="Number"/>
+    <TextField fx:id="txtNumber" layoutX="621.0" layoutY="242.0"/>
+    <Label layoutX="626.0" layoutY="301.0" text="Contract Starts"/>
+    <TextField fx:id="txtContractStarts" layoutX="626.0" layoutY="336.0"/>
+    <Label layoutX="626.0" layoutY="396.0" text="Contract Ends"/>
+    <TextField fx:id="txtContractEnds" layoutX="626.0" layoutY="433.0"/>
+    <Label fx:id="lbActual" layoutX="60.0" layoutY="79.0" text="Actual team"/>
+
+
+</AnchorPane>
